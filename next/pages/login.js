@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Row, Col, Input, Modal, Button, Form, Icon, Tooltip } from 'antd';
 import { connect } from 'react-redux'
-import HOST from '../config/host'
 import '../static/css/app.css'
 import Router from 'next/router'
 import Axios from 'axios';
+import HOST from '../config/host'
 
 const host = HOST.host;
 class login extends Component {
@@ -166,12 +166,13 @@ class login extends Component {
                 })
                 Router.back(-1)
             }).catch((err) => {
+                this.props.NoticeError('账号或或密码错误')
                 console.log(err)
             })
         }
     }
     componentDidMount() {
-        console.log(this.props.auth)
+        console.log(this.props)
     }
     render() {
         const { getFieldDecorator } = this.props.form;
@@ -298,7 +299,10 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
     return {
         ToggleLogin: (user) => dispatch({ type: 'toggleAuth', user }),
-        LoginOut: () => dispatch({ type: 'loginOut' })
+        LoginOut: () => dispatch({ type: 'loginOut' }),
+        NoticeSussess: (value) => dispatch({ type: 'success', value }),
+        NoticeError: (value) => dispatch({ type: 'error', value }),
+        NoticeWarning: (value) => dispatch({ type: 'warning', value }),
     }
 }
 

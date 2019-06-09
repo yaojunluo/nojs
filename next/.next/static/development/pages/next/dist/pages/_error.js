@@ -3755,10 +3755,10 @@ module.exports = __webpack_require__(/*! ./dist/lib/head */ "./node_modules/next
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=D%3A%5Cnojspro%5Cnext-antd%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js!./":
-/*!********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=D%3A%5Cnojspro%5Cnext-antd%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js ***!
-  \********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=D%3A%5Cnojspro%5Cnojs%5Cnext%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js!./":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=D%3A%5Cnojspro%5Cnojs%5Cnext%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js ***!
+  \**********************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3917,14 +3917,14 @@ module.exports = (__webpack_require__(/*! dll-reference dll_7aff549c98b978433226
 
 /***/ }),
 
-/***/ 13:
-/*!************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=D%3A%5Cnojspro%5Cnext-antd%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js ***!
-  \************************************************************************************************************************************************************************/
+/***/ 20:
+/*!**************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=D%3A%5Cnojspro%5Cnojs%5Cnext%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js ***!
+  \**************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=D%3A%5Cnojspro%5Cnext-antd%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=D%3A%5Cnojspro%5Cnext-antd%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=D%3A%5Cnojspro%5Cnojs%5Cnext%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=D%3A%5Cnojspro%5Cnojs%5Cnext%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js!./");
 
 
 /***/ }),
@@ -3940,5 +3940,5 @@ module.exports = dll_7aff549c98b978433226;
 
 /***/ })
 
-},[[13,"static/runtime/webpack.js"]]]);
+},[[20,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=_error.js.map

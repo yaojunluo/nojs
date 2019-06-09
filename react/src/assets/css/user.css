@@ -1,0 +1,128 @@
+#user-info{
+    width: 100%;
+    background: #ffffff;
+    position: relative;
+    margin-bottom: 30px;
+}
+.user-info-bg{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.user-info-box{
+    height: 120px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-info-box .info-head{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: #ffffff 2px solid;
+    margin-left: 20px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
+}
+.info-box-left{
+    display: flex;
+    align-items: center;
+}
+.info-box-name{
+    margin-left: 15px;
+}
+.info-box-name h3{
+    margin: 0;
+}
+
+.info-box-name p{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.info-box-name i{
+    margin-right: 5px;
+}
+
+.info-box-name span{
+    font-size: 12px;
+    color: #303030;
+}
+.info-box-material{
+    margin-bottom: 10px;
+}
+.info-box-material .material{
+    
+    height: 50px;
+}
+.info-box-material .material li{
+    padding: 0 15px;
+    height: 50px;
+    color: #303133;
+}
+.info-box-material .material a{
+    color: #000000;
+    padding: 0;
+
+}
+.info-box-material .iborder{
+    border-color: #DCDFE6;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.user-nav{
+    background: #ffffff;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.user-nav ul li{
+    list-style: none;
+    line-height: 35px;
+}
+.user-copyright{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.user-content{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.user-content h3{
+    padding-bottom: 10px;
+}
+.user-content .ant-spin-container{
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+.changeInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.user-content .changeInfo h3{
+    padding-bottom: 0px;
+    margin: 0;
+}
+.ant-form.ant-form-horizontal .ant-form-item{
+    text-align: left;
+}
+.picture-box{
+    display: flex;
+    justify-content: center;
+}
+.user-nav a{
+    color: #666666;
+}

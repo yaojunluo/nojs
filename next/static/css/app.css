@@ -121,3 +121,20 @@ nav a{
 .ant-modal-header p{
     margin-top: 20px;
 }
+.blog .ant-list-item-main{
+    position: relative;
+}
+.blog .ant-list-item-action{
+    position: absolute;
+    bottom: 0;
+}
+.blog .header_list{
+    color: #EBEEF5;
+}
+.blog .header_list a{
+    color: #414149;
+    margin: 0 10px;
+}
+.blog .header_list a:hover{
+    color: #409EFF;
+}

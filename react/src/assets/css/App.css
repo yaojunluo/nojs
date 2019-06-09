@@ -1,0 +1,397 @@
+/* .App{
+  padding-top: 65px;
+} */
+body,html{
+  width: 100%;
+  height: 100%;
+}
+pre{
+  background-color: #23241f;
+  color: #C0C4CC;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+*::-webkit-scrollbar-track-piece { 
+  background-color:#f8f8f8;
+  }
+  *::-webkit-scrollbar {
+  width:6px;
+  height:8px;
+  }
+  *::-webkit-scrollbar-thumb {
+  background-color:#dddddd;
+  background-clip:padding-box;
+  min-height:28px;
+  }
+  *::-webkit-scrollbar-thumb:hover {
+  background-color:#bbb;
+  }
+.ant-layout-header{
+  background: #ffffff;
+  padding: 0;
+  border-bottom: 1px solid #f1f1f1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+.ant-layout{
+  background-color: rgba(255, 255, 255, 0);
+}
+.HeadTag{
+  width: 100%;
+  height: 35px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+  justify-content: center;
+}
+.NavTop,.flexCenter{
+  display: flex;
+  justify-content: center;
+}
+#HomeHeader{
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  height: 64px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+#HomeHeader .HeadLeft{
+  display: flex;
+  align-items: center;
+  
+}
+.HeadLeft ul{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.HeadLeft ul li{
+  list-style: none;
+  padding: 0 15px;
+  color: #71777c;
+  font-size: 16px;
+}
+.HeadLeft ul li:hover{
+  color: #007fff;
+}
+.HeadLeft .logo{
+  height: 35px;
+}
+.HeadRight .ant-modal-header{
+  border: 0;
+}
+#HomeHeader .HeadRight{
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+.HeadRight>*{
+  margin: 0 10px;
+}
+.HeadRight .HeadBell{
+  margin: 0 10px;
+  font-size: 20px;
+}
+.HeadRight .HeadBell:hover{
+  color: #007fff;
+  cursor: pointer;
+}
+.HeadRight .HeadImage{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 0;
+}
+#loginModel{
+  width: 100%;
+  min-height: 270px;
+  padding: 0 10px;
+}
+#loginModel h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#loginModel .login-form {
+  width: 100%;
+}
+#loginModel .login-form-forgot {
+  float: right;
+}
+#loginModel .login-form-button {
+  width: 100%;
+}
+.NoLogin{
+  padding: 0;
+}
+
+/* content 部分样式 */
+.ant-layout-content{
+  margin-top: 80px;
+  background: #f4f5f5;
+}
+.long{
+  width: 100%;
+  height: 800px;
+}
+.ViewLeft{
+  background: #ffffff;
+  width: 100%;
+}
+.ViewRight{
+  width: 100%;
+}
+.SortPag{
+  height: 40px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.SortPag ul{
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding-left: 8px;
+}
+.SortPag ul li{
+  list-style: none;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #71777c;
+  cursor: pointer;
+}
+.iborder{
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  border-left: 1px solid #f1f1f1;
+}
+.demo-loadmore-list {
+  min-height: 350px;
+}
+.LoadingList{
+  padding-bottom: 20px;
+}
+.LoadingList .ant-list-items{
+  padding: 0px 20px;
+}
+.listimg{
+  width: 60px;
+}
+.listTitle{
+  width: 100%;
+  height: 100px;
+}
+.SectionName{
+  font-size: 12px;
+}
+.TextTitle{
+  margin: 10px 0;
+  height: 35px;
+  overflow: hidden;
+  width: 100%;
+}
+.ListGrpup .ant-btn{
+  height: 25px;
+  color: #71777c;
+}
+.ListGrpup .ant-btn:hover{
+  color: #007fff;
+}
+.ListGrpup span{
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.RightTop{
+  background: #ffffff;
+  margin-bottom: 20px;
+}
+.RightTop .SortPag{
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  columns: #333333;
+}
+.avaterClass{
+  padding: 5px 10px;
+}
+.avaterClass .ant-list-item-meta-avatar,.avaterClass .ant-avatar-image{
+  width: 50px;
+  height: 50px;
+}
+.avaterClass .ant-list-item-meta-description{
+  height: 45px;
+  overflow: hidden;
+}
+.BottomPag{
+  
+  height: 40px;
+  border-top: 1px solid #f1f1f1;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.CatalogueList{
+  width: 100%;
+  height: 300px;
+  background: #ffffff;
+  margin-top: 15px;
+}
+
+/**
+* 2019/5/24
+* 文章详情页
+*/
+.ArticleDetails{
+  width: 100%;
+  background: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+.ArticleInfo{
+  width: 100%;
+  background: #ffffff;
+  box-sizing: border-box;
+  min-height: 100px;
+}
+.Article-Interact{
+  position: absolute;
+  left: -80px;
+  width: 50px;
+}
+.Article-Btn{
+  width: 35px;
+  height: 35px;
+  border: 0;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0;
+  color: #999;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.Article-avater .SortPag{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  font-weight: bold;
+}
+.A_info{
+  text-align: center;
+}
+.A_headimg{
+  box-sizing: border-box;
+  padding: 10px;
+}
+.A_headimg img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.A_name{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  padding: 10px;
+  padding-left: 0;
+}
+.A_name a{
+  color: #303133;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.A_name button{
+  margin: 10px auto;
+}
+.A_name button i{
+  font-weight: bold;
+}
+.A_text{
+  box-sizing: border-box;
+  padding: 10px;
+}
+.material{
+  display: flex;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+}
+.material .iborder{
+  height: 50px;
+}
+.material li{
+  list-style: none;
+  text-align: center;
+  width: 34%;
+}
+.material_top{
+  display: block;
+  font-size: 12px;
+}
+.material li a{
+  font-size: 24px;
+  color: #606266;
+}
+.lvBadge{
+  width: 40px;
+  padding: 0;
+  height: 15px;
+  background: #007fff;
+}
+.mulu{
+  margin: 15px 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.mulu h4{
+  margin-bottom: 10px;
+}
+.article-writer a{
+  color: #303133;
+  display: flex;
+  align-items: center;
+  
+}
+.article-writer p{
+  font-size: 12px;
+}
+.MainPic{
+  width: 100%;
+  margin: 20px auto;
+}
+.MainPic img{
+  width: 100%;
+}
+.article-content{
+  font-size: 14px;
+}
+
+.article-comment{
+  margin-top: 50px;
+  
+}
+.copyright{
+  color: #606266;
+  font-size: 12px;
+}
+.copyright a{
+  color: #303133;
+}

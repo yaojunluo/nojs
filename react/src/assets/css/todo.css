@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background: #f4f5f5;
+}
+.navTop{
+    width: 100%;
+    height: 50px;
+    background: #333;
+}
+.toCenter{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    align-items: center;
+    height: 50px;
+}
+.logo{
+    display: block;
+    font-size: 26px;
+}
+.addtodo{
+    width: 350px;
+    height: 28px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
+    padding: 0 10px;
+}
+.list{
+    width: 600px;
+    margin: 20px auto;
+    
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.title span{
+    display: block;
+    padding: 0 6px;
+    height: 20px;
+    border-radius: 20px;
+    background: #E6E6FA;
+    line-height: 22px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.task{
+    margin: 10px 0;
+}
+.task li{
+    list-style: none;
+    height: 32px;
+    line-height: 32px;
+    background: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    border-radius: 3px;
+    border-left: 5px solid #629A9C;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task li a{
+    text-decoration: none;
+    
+    display: block;
+    padding: 0 7px;
+    height: 20px;
+    border-radius: 20px;
+    background: #CDCDCD;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+}
+.task li p{
+    height: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.task li .check{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.task li span{
+    padding-left: 10px;
+}
+.task li .vtitle{
+    background: #ffffff;
+    border:0;
+    font-size: 16px;
+    color: #333;
+    padding: 3px 10px;
+    outline: 0;
+    min-width: 400px;
+}
+.task li .vtitle:focus{
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    font-size: 16px;
+    color: #333;
+}

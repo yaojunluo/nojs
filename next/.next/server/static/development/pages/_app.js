@@ -664,6 +664,44 @@ module.exports = _typeof;
 
 /***/ }),
 
+/***/ "./node_modules/antd/lib/message/style/css.js":
+/*!****************************************************!*\
+  !*** ./node_modules/antd/lib/message/style/css.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(/*! ../../style/index.css */ "./node_modules/antd/lib/style/index.css");
+
+__webpack_require__(/*! ./index.css */ "./node_modules/antd/lib/message/style/index.css");
+
+/***/ }),
+
+/***/ "./node_modules/antd/lib/message/style/index.css":
+/*!*******************************************************!*\
+  !*** ./node_modules/antd/lib/message/style/index.css ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./node_modules/antd/lib/style/index.css":
+/*!***********************************************!*\
+  !*** ./node_modules/antd/lib/style/index.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./node_modules/next/app.js":
 /*!**********************************!*\
   !*** ./node_modules/next/app.js ***!
@@ -932,7 +970,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "D:\\nojspro\\next-antd\\pages\\_app.js";
+var _jsxFileName = "D:\\nojspro\\nojs\\next\\pages\\_app.js";
 
 
 
@@ -1015,18 +1053,35 @@ function (_App) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-// const { persistStore, autoRehydrate } = require('redux-persist');
-// //  存储机制，可换成cookie等其他机制
-// const { asyncSessionStorage } = require('redux-persist/storages');
+/* harmony import */ var antd_lib_message_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! antd/lib/message/style/css */ "./node_modules/antd/lib/message/style/css.js");
+/* harmony import */ var antd_lib_message_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_message_style_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_message__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/lib/message */ "antd/lib/message");
+/* harmony import */ var antd_lib_message__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_message__WEBPACK_IMPORTED_MODULE_1__);
+
+
 var logindata = {
   auth: false,
-  user: {} //这是action
-  // const togglelogin = {
-  //   type: 'toggleAuth'
-  // }
-  //这是reducer
-
+  user: {}
 };
+
+var notice = function notice(e) {
+  console.log(e.value);
+
+  antd_lib_message__WEBPACK_IMPORTED_MODULE_1___default.a[e.type](e.value);
+};
+
+var error = function error() {
+  antd_lib_message__WEBPACK_IMPORTED_MODULE_1___default.a.error('This is a message of error');
+};
+
+var warning = function warning() {
+  antd_lib_message__WEBPACK_IMPORTED_MODULE_1___default.a.warning('This is message of warning');
+}; //这是action
+// const togglelogin = {
+//   type: 'toggleAuth'
+// }
+//这是reducer
+
 
 var reducer = function reducer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : logindata;
@@ -1047,6 +1102,19 @@ var reducer = function reducer() {
         user: {}
       };
 
+    case 'success':
+      console.log(action);
+      notice(action);
+      return state;
+
+    case 'error':
+      notice(action);
+      return state;
+
+    case 'warning':
+      notice(action);
+      return state;
+
     default:
       return state;
   }
@@ -1065,6 +1133,17 @@ var reducer = function reducer() {
 
 module.exports = __webpack_require__(/*! private-next-pages/_app.js */"./pages/_app.js");
 
+
+/***/ }),
+
+/***/ "antd/lib/message":
+/*!***********************************!*\
+  !*** external "antd/lib/message" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/message");
 
 /***/ }),
 

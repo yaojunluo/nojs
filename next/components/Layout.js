@@ -5,7 +5,7 @@ import { Row, Col } from 'antd'
 import '../static/css/app.css'
 
 export default ({ children, title = 'Nojs' }) => (
-  <div>
+  <div className="box">
     <Head>
       <title>{title}</title>
       <meta charSet='utf-8' />
@@ -45,6 +45,10 @@ export default ({ children, title = 'Nojs' }) => (
     <style jsx>
       {
         `
+        .box{
+          position: relative;
+          padding-bottom: 50px;
+        }
         .copyright {
           display: flex;
           justify-content: center;
