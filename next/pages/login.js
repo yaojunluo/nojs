@@ -123,6 +123,23 @@ class login extends Component {
         this.props.form.validateFields((err, values) => {
             if (!err) {
                 console.log('Received values of form: ', values);
+                let { email, username, password, check_password } = values;
+                if (password === check_password) {
+                    Axios.post(host + '/public/register', { email, username, password }).then(response => {
+                        console.log(response);
+
+                        this.setState({
+                            visible: false,
+                        });
+                        if (response.data.code == 200) {
+                            this.props.NoticeSussess(response.data.message)
+                        } else {
+                            this.props.NoticeWarning(response.data.message)
+                        }
+                    }).catch(error => {
+                        console.error(error)
+                    })
+                }
             }
         });
     };

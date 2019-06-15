@@ -31,7 +31,8 @@ class Navinfo extends Component {
         this.state = {
             login: false,
             drawer: false,
-            searchlist: []
+            searchlist: [],
+            avatarUrl:''
         };
     }
 
@@ -39,7 +40,8 @@ class Navinfo extends Component {
         console.log(this.props)
         if (this.props.auth) {
             this.setState({
-                login: true
+                login: true,
+                avatarUrl: this.props.user.avatarUrl
             })
         }
     }
@@ -61,6 +63,9 @@ class Navinfo extends Component {
         })
     }
 
+    writeTweets = ()=>{
+        Router.push('/write')
+    }
     searchList = (e) => {
         console.log(e)
         Axios.get(host + '/public/search', {
@@ -91,22 +96,22 @@ class Navinfo extends Component {
         return (
             <div className="navinfo">
                 <Button shape="circle" icon="search" onClick={this.showDrawer} />
-                <Button>写推文</Button>
+                <Button><a href="/write" target="_blank">写推文</a></Button>
                 {
                     login ? (<Dropdown overlay={(
                         <Menu>
                             <Menu.Item key="0">
-                                <a href="http://www.alipay.com/">1st menu item</a>
+                                <a href="/user/homepage">用户主页</a>
                             </Menu.Item>
                             <Menu.Item key="1">
-                                <a href="http://www.taobao.com/">2nd menu item</a>
+                                <a href="/user/info">资料修改</a>
                             </Menu.Item>
                             <Menu.Divider />
                             <Menu.Item key="3" onClick={this.loginout}>退出登录</Menu.Item>
                         </Menu>
                     )} trigger={['click']}>
 
-                        <img src="/static/img/123.jpg" className="avater" />
+                        <img src={this.state.avatarUrl} className="avater" style={{borderRadius:'50%'}}/>
                     </Dropdown>) : <div className="unlogin">
                             <Button type="link" size={"small"} onClick={this.LinkPages.bind(this, '/login')}>
                                 登录

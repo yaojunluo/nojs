@@ -121,8 +121,12 @@ nav a{
 .ant-modal-header p{
     margin-top: 20px;
 }
+
 .blog .ant-list-item-main{
     position: relative;
+    /* 点赞收藏的位置 */
+    padding-bottom: 40px;
+    box-sizing: border-box;
 }
 .blog .ant-list-item-action{
     position: absolute;
@@ -137,4 +141,240 @@ nav a{
 }
 .blog .header_list a:hover{
     color: #409EFF;
+}
+.blog .ant-list-item-meta{
+    display: flex;
+    align-items: center;
+}
+.blog .zshadow{
+    background: #ffffff;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.content .ant-card-body{
+    position: relative;
+}
+.content .card_author a{
+    font-size: 16px;
+    margin: 10px 0;
+    display: block;
+}
+.content .ant-card-body .avaterimg{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    top: -25px;
+    right: 20px;
+}
+.content .anchor-box{
+    width: 100%;
+    margin: 20px 0;
+}
+.content .anchor-box h4{
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 20px;
+    color: #414149;
+}
+.content .anchor-box .ant-anchor-wrapper{
+    background: rgba(0, 0, 0, 0)
+}
+.content .content_box{
+    background: #ffffff;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+}
+.content_author, .content_title, .content_detail,.content_interact,.content #comment{
+    
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.content .content_author h3{
+    color: #303133
+}
+.content .content_author p{
+    font-size: 12px;
+    color: #606266;
+}
+.content .content_cover{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.content .content_cover img{
+    width: 100%;
+}
+.content .content_title{
+    margin: 20px 0;
+}
+.content .content_detail ul{
+    margin-left: 20px;
+}
+.content .content_detail img{
+    width: 100%;
+    height: auto;
+}
+.content .content_interact{
+    display: flex;
+    justify-content: space-between;
+}
+.content .interact_icon{
+    display: flex;
+}
+.content .interact_icon span{
+    display: block;
+    margin: 10px 0;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #909399;
+}
+.content .interact_icon span:hover .anticon{
+    color: #409EFF;
+}
+.content .float_interact{
+    position: absolute;
+    left: -65px;
+    top: 120px;
+}
+.interact_affix .ant-badge{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px 0;
+}
+.interact_affix .ant-btn{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+/* 查看用户 */
+.vistor_info{
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+.vistor_info img{
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+
+}
+.vistor_info .info_row{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    bottom: -50px;
+}
+.vistor_info .info_col{
+    display: flex;
+    align-items: center;
+}
+.vistor_info .info_col img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #F2F6FC;
+}
+.vistor_info .info_col .info_col_name{
+    margin: 0 15px;
+    color: #606266;
+    line-height: 15px;
+    height: 50px;
+}
+.vistor_info  .info_col_name h2{
+    display: flex;
+    align-items: center;
+}
+.vistor_info .info_col .ant-tag{
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.blogPost .ant-list-header{
+    
+    box-sizing: border-box;
+    padding: 10px;
+}
+.blogPost .ant-list-item{
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* 用户修改页面 */
+.upload_head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.upload_head .avater_img{
+    position: relative;
+} 
+.upload_head .avater_img button{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    border: 1px solid #ffffff;
+}
+.upload_head .avater_img img{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.name_email{
+    max-width: 200px;
+    min-height: 70px;
+    text-align: center;
+    margin: 20px auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+/* 用户主页 */
+.user_index>div {
+    margin-bottom: 15px;
+    background: #ffffff;
+    padding: 10px;
+}
+.user_index .ant-card{
+    border: none;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.03);
+}
+.user_info{
+    background: #ffffff;
+    padding: 15px;
+}
+ .info_password{
+    width: 100%;
+    text-align: center;
+    background: #ffffff;
+    margin-top: 20px;
+    padding: 15px;
+}
+.mine_tweet{
+    
+    background: #ffffff;
+    box-sizing: border-box;
+    padding: 15px;
+    min-height: 445px;
+}
+@media screen and (max-width: 768px) {
+
+    
+    .nav{
+        display: none;
+    }
 }

@@ -109,7 +109,6 @@ __webpack_require__.r(__webpack_exports__);
 var init = function init() {
   axios__WEBPACK_IMPORTED_MODULE_0___default.a.interceptors.request.use(function (config) {
     var token = localStorage.getItem('token');
-    console.log(token);
     config.headers.common['Authorization'] = 'Bearer ' + token;
     return config;
   });
@@ -970,7 +969,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "D:\\nojspro\\nojs\\next\\pages\\_app.js";
+var _jsxFileName = "R:\\nojs\\next\\pages\\_app.js";
 
 
 

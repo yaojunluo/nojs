@@ -1,4 +1,32 @@
 {
+  "../components/edit": [
+    {
+      "id": "./node_modules/antd/lib/input/style/index.css",
+      "name": "./node_modules/antd/lib/input/style/index.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": "./components/edit.js",
+      "name": "./components/edit.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "../components/write": [
+    {
+      "id": "./node_modules/antd/lib/input/style/index.css",
+      "name": "./node_modules/antd/lib/input/style/index.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": "./components/write.js",
+      "name": "./components/write.js",
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
+    }
+  ],
   "./noop": [
     {
       "id": "./node_modules/next/dist/client/noop.js",
