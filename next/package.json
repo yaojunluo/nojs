@@ -13,7 +13,7 @@
     "babel-plugin-import": "^1.9.1",
     "cookie": "^0.4.0",
     "moment": "^2.24.0",
-    "next": "^8.1.0",
+    "next": "^9.3.2",
     "null-loader": "2.0.0",
     "quill-image-drop-module": "^1.0.3",
     "react": "^16.8.6",
